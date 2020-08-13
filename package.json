@@ -4,7 +4,11 @@
   "description": "My javascript node template ",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "babel-node ./src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "test": "jest",
+    "build": "npx babel src --out-dir dist",
+    "prettier": "npx prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,30 @@
   },
   "homepage": "https://github.com/deborabeda/node_js_template#readme",
   "devDependencies": {
-    "jest": "^26.4.0"
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.0",
+    "nodemon": "^2.0.4",
+    "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "express": "^4.17.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
