@@ -1,0 +1,27 @@
+{
+  "name": "node_js_template",
+  "version": "1.0.0",
+  "description": "My javascript node template ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deborabeda/node_js_template.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "javascript"
+  ],
+  "author": "Debora Beda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deborabeda/node_js_template/issues"
+  },
+  "homepage": "https://github.com/deborabeda/node_js_template#readme",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
+}
